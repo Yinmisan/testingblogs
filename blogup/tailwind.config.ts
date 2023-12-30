@@ -14,7 +14,16 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
-  },
-  plugins: [],
+  },   
+  
+  
+  daisyui: {
+      themes: ["winter", "night", "valentine"],
+    },
+
+  plugins: [require("daisyui")],
+
+
+  
 }
 export default config
