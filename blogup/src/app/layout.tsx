@@ -16,28 +16,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const header = (
-    <header>
-      <div className="navbar bg-base-100">
-        {" "}
-        <div className="sm:">
-          <button className="btn btn-ghost">
-            {" "}
-            <div className="badge badge-neutral badge-lg"></div>
-          </button>
-          <button className="btn btn-ghost">
-            {" "}
-            <div className="badge badge-primary badge-lg"></div>
-          </button>
-          <button className="btn btn-ghost">
-            {" "}
-            <div className="badge badge-secondary badge-lg"></div>
-          </button>
-          <button className="btn btn-ghost">
-            {" "}
-            <div className="badge badge-accent badge-lg"></div>
-          </button>
-        </div>
-      </div>
+    <header className="flex justify-center space-evenly"> 
+    
       <div className="navbar bg-base-100">
         <div className="">
           <button className="btn btn-ghost">
@@ -63,12 +43,12 @@ export default function RootLayout({
           <Link href="/" className="btn btn-primary text-xl">
             {" "}
           </Link>
-          <Link href="/" className="btn btn-secondary text-xl">
-            {" "}
+          <Link href="/contact" className="btn btn-secondary text-xl">
+            Contact
           </Link>
-          <Link href="/" className="btn btn-accent text-xl"></Link>
+          <Link href="/blogs" className="btn btn-accent text-xl">Blog</Link>
           <Link href="/" className="btn btn-ghost text-xl">
-            Blog-up
+          Yinmi
           </Link>
         </div>
       </div>
@@ -82,7 +62,7 @@ export default function RootLayout({
           <p>
             The Ultimate{" "}
             <Link
-              className="text-accent"
+              className="text-accent link link-hover"
               href="https://github.com/Yinmisan/TheUltimateYinmi"
             >
               Yinmi

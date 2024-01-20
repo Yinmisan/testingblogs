@@ -21,7 +21,7 @@ const config: Config = {
       themes: ["winter", "night", "valentine"],
     },
 
-  plugins: [require("daisyui")],
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
 
 
   
